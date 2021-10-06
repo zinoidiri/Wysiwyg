@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyWysiwyg</title>
+</head>
+<body>
+    <div id="textarea" >
+        <div id="editeur" contenteditable></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="plugin.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("textarea").my_wysiwyg({buttons:["bold" , "italic" , "underline" , "strikeThrough" , "color" , "justifyLeft" , "justifyRight" , "justifyCenter" , "justify" , "font size" , "link" , "source"]});
+        })
+    </script>
+    
+</body>
+</html>
